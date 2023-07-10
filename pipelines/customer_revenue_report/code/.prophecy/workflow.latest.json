@@ -1,0 +1,827 @@
+{
+  "metainfo" : {
+    "id" : "1",
+    "language" : "python",
+    "fabricId" : "3230",
+    "frontEndLanguage" : "sql",
+    "mode" : "batch",
+    "udfs" : {
+      "language" : "python",
+      "udfs" : [ ],
+      "functionPackageName" : "kyakkalanlprophecy.io_team.revenue_report.functions",
+      "sharedFunctionPackageNames" : [ ]
+    },
+    "udafs" : {
+      "language" : "python",
+      "code" : ""
+    },
+    "configuration" : {
+      "common" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "oldCommon" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "fabrics" : { },
+      "instances" : { },
+      "selected" : "default",
+      "nonEditable" : [ ],
+      "isSubscribedPipelineWithPipelineConfigs" : false
+    },
+    "sparkConf" : [ ],
+    "hadoopConf" : [ ],
+    "codeMode" : "sparse",
+    "buildSystem" : "maven",
+    "externalDependencies" : [ ],
+    "dependentProjectExternalDependencies" : [ ],
+    "isImported" : false,
+    "interimMode" : "Full",
+    "interimModeEnabled" : true,
+    "visualCodeInterimMode" : "Disabled",
+    "recordsLimit" : {
+      "enabled" : true,
+      "value" : 100
+    },
+    "topLevelPackage" : "customer_revenue_report",
+    "configurationVersion" : "v1"
+  },
+  "connections" : [ {
+    "id" : "L3lNLb0fMokPH94iqHKrG$$tlb4thr8_rMzQGKXCujYl",
+    "source" : "_hRBqJPR-s0Tueb1jQ0_L$$E882Dn70EfWJ470Zz5N1g",
+    "sourcePort" : "GVAzaJoc2lqIob5Q7Gb2E$$3bA1GkhhFNe2yFJeA1JeB",
+    "target" : "8Rbh9OgBtqJVJhrlow1Fv$$Ryyh5Gy8A4xWO6kUUco_R",
+    "targetPort" : "d1kuwnKG7H_o02kcuM9H8$$89sRn9yZOXxc15mRjGEjm"
+  }, {
+    "id" : "RFEL3jLDr9e_VpD7dWXri$$2AzYvGuNaC522ODGTorl5",
+    "source" : "7wSsTV-6WiXkkZ39THY_N$$30RqZfpMqJ1P_W-gw9OdH",
+    "sourcePort" : "2qrEqau9HW9v2T-vQH0n8$$BhsFfgp4s37kUkX6UKc8N",
+    "target" : "8Rbh9OgBtqJVJhrlow1Fv$$Ryyh5Gy8A4xWO6kUUco_R",
+    "targetPort" : "VLR-n_1fv0mcaDSB7PD7V$$Rs44YfBVaERltLChT9tOL"
+  }, {
+    "id" : "6348U3Bq82KeLs_-3Y90f$$qRvEry7_9JpB-Ij1yZx-k",
+    "source" : "8Rbh9OgBtqJVJhrlow1Fv$$Ryyh5Gy8A4xWO6kUUco_R",
+    "sourcePort" : "jDysgiOPSpPkEWBEKE2K9$$HIsPHLppk0d5W7IOoNl11",
+    "target" : "Ladzz1HX1m1Pz5mlyBtNr$$6J2RxUdFL55RAuuASLgXU",
+    "targetPort" : "BQo5D6pS8eh66EQ_GF7-C$$MaZNc4Uva0f47cM8l0qzv"
+  }, {
+    "id" : "oA4bVEJ8cVMcXWm6grxRt$$v_Jb5cJmZUPXa7KVhLrv8",
+    "source" : "Ladzz1HX1m1Pz5mlyBtNr$$6J2RxUdFL55RAuuASLgXU",
+    "sourcePort" : "9kQro9j2XZJQPU4eIokAY$$ICNcWqvRoitG9cC97fi2G",
+    "target" : "3sHEccI6PW29ANx6r3kO_$$n47MZhGecOdm7FCfB-_R-",
+    "targetPort" : "1y2mad8BY-VgGvgJovHGd$$pTmjpIVm2a30I9CAPkQWX"
+  }, {
+    "id" : "MW85glmgJEbR2XYygloXM",
+    "source" : "3sHEccI6PW29ANx6r3kO_$$n47MZhGecOdm7FCfB-_R-",
+    "sourcePort" : "ymfLB80y295hmxzW_Yolo$$u07n_V4urk_a0JCdRWMB4",
+    "target" : "27cKhtzSPZzZvUgcZX-N2$$GKq_Xw2BYeHWNt29d6Tzo",
+    "targetPort" : "p6wNEw8knpCT5XvN9fPdu$$8oK_08VN9NZMQdscMAD9j"
+  }, {
+    "id" : "mgmzNJRS668O7Ax1OvRux",
+    "source" : "27cKhtzSPZzZvUgcZX-N2$$GKq_Xw2BYeHWNt29d6Tzo",
+    "sourcePort" : "m4-D0uQoicd92pK-n9Boz$$8UyHGHAzgYgtPkjbOoS5m",
+    "target" : "UEN594rEBGDaUe6vt9NZE$$uut9j5cYrN_fMwTGR6hdj",
+    "targetPort" : "aY3AaVoMS3mfpQNMKrHuN$$elyEvuTeG8aFFtjJNJAWL"
+  }, {
+    "id" : "oBU-i93bszwnf9huAG_jv$$HtsowaSv8bpX-LoV09aTU",
+    "source" : "UEN594rEBGDaUe6vt9NZE$$uut9j5cYrN_fMwTGR6hdj",
+    "sourcePort" : "HB50GulLmTBDlxD-kWPv7$$pCylCgrbg0RKvGyoVtP4e",
+    "target" : "Of433Rht898dQh9cIo2p2$$y8p3dRw5Wuo-qnt7SAros",
+    "targetPort" : "uiH2OILnXzVHXTPmkqooJ$$u7X2eJzIt8OVjCmvp-7qO"
+  } ],
+  "processes" : {
+    "27cKhtzSPZzZvUgcZX-N2$$GKq_Xw2BYeHWNt29d6Tzo" : {
+      "id" : "27cKhtzSPZzZvUgcZX-N2$$GKq_Xw2BYeHWNt29d6Tzo",
+      "component" : "Repartition",
+      "metadata" : {
+        "label" : "Repartition_1",
+        "slug" : "Repartition_1",
+        "x" : 780,
+        "y" : 20,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "p6wNEw8knpCT5XvN9fPdu$$8oK_08VN9NZMQdscMAD9j",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "customer_id",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "full_name",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "account_lifetime",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "total_expenditure",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "m4-D0uQoicd92pK-n9Boz$$8UyHGHAzgYgtPkjbOoS5m",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "overwriteDefaultNPartitions" : false,
+        "hashExpressions" : [ ],
+        "columnsSelector" : [ ],
+        "repartitionType" : "coalesce",
+        "rangeExpressions" : [ ],
+        "defaultPartitions" : null,
+        "nPartitions" : "1"
+      }
+    },
+    "8Rbh9OgBtqJVJhrlow1Fv$$Ryyh5Gy8A4xWO6kUUco_R" : {
+      "id" : "8Rbh9OgBtqJVJhrlow1Fv$$Ryyh5Gy8A4xWO6kUUco_R",
+      "component" : "Join",
+      "metadata" : {
+        "label" : "Join_1",
+        "slug" : "Join_1",
+        "x" : 180,
+        "y" : 20,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "d1kuwnKG7H_o02kcuM9H8$$89sRn9yZOXxc15mRjGEjm",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "customer_id",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "first_name",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "last_name",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "phone",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "email",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "country_code",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "account_open_date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "account_flags",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        }, {
+          "id" : "VLR-n_1fv0mcaDSB7PD7V$$Rs44YfBVaERltLChT9tOL",
+          "slug" : "in1",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "order_id",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "customer_id",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "order_status",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "order_category",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "order_date",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "amount",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "jDysgiOPSpPkEWBEKE2K9$$HIsPHLppk0d5W7IOoNl11",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "conditions" : [ {
+          "alias" : "in1",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "(in0.customer_id = in1.customer_id)"
+          },
+          "joinType" : "inner"
+        } ],
+        "expressions" : [ {
+          "target" : "customer_id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.customer_id"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "first_name",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.first_name"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "last_name",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.last_name"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "account_open_date",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in0.account_open_date"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "amount",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "in1.amount"
+          },
+          "description" : "",
+          "_row_id" : null
+        } ],
+        "hints" : [ {
+          "id" : "d1kuwnKG7H_o02kcuM9H8$$89sRn9yZOXxc15mRjGEjm",
+          "alias" : "in0",
+          "hintType" : "none",
+          "propagateColumns" : false
+        }, {
+          "id" : "VLR-n_1fv0mcaDSB7PD7V$$Rs44YfBVaERltLChT9tOL",
+          "alias" : "in1",
+          "hintType" : "none",
+          "propagateColumns" : false
+        } ],
+        "allIn1" : null,
+        "activeTab" : "advanced",
+        "columnsSelector" : [ "VLR-n_1fv0mcaDSB7PD7V$$Rs44YfBVaERltLChT9tOL##customer_id", "d1kuwnKG7H_o02kcuM9H8$$89sRn9yZOXxc15mRjGEjm##customer_id", "d1kuwnKG7H_o02kcuM9H8$$89sRn9yZOXxc15mRjGEjm##account_open_date", "d1kuwnKG7H_o02kcuM9H8$$89sRn9yZOXxc15mRjGEjm##last_name", "d1kuwnKG7H_o02kcuM9H8$$89sRn9yZOXxc15mRjGEjm##customer_id", "VLR-n_1fv0mcaDSB7PD7V$$Rs44YfBVaERltLChT9tOL##amount", "d1kuwnKG7H_o02kcuM9H8$$89sRn9yZOXxc15mRjGEjm##first_name" ],
+        "allIn0" : null,
+        "whereClause" : null,
+        "headAlias" : "in0"
+      }
+    },
+    "_hRBqJPR-s0Tueb1jQ0_L$$E882Dn70EfWJ470Zz5N1g" : {
+      "id" : "_hRBqJPR-s0Tueb1jQ0_L$$E882Dn70EfWJ470Zz5N1g",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "customer_ds",
+        "slug" : "customer_ds",
+        "x" : -20,
+        "y" : -80,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "GVAzaJoc2lqIob5Q7Gb2E$$3bA1GkhhFNe2yFJeA1JeB",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/customers_ds"
+      }
+    },
+    "UEN594rEBGDaUe6vt9NZE$$uut9j5cYrN_fMwTGR6hdj" : {
+      "id" : "UEN594rEBGDaUe6vt9NZE$$uut9j5cYrN_fMwTGR6hdj",
+      "component" : "OrderBy",
+      "metadata" : {
+        "label" : "OrderBy_1",
+        "slug" : "OrderBy_1",
+        "x" : 980,
+        "y" : 20,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "aY3AaVoMS3mfpQNMKrHuN$$elyEvuTeG8aFFtjJNJAWL",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "customer_id",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "full_name",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "account_lifetime",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "total_expenditure",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "HB50GulLmTBDlxD-kWPv7$$pCylCgrbg0RKvGyoVtP4e",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "columnsSelector" : [ "aY3AaVoMS3mfpQNMKrHuN$$elyEvuTeG8aFFtjJNJAWL##total_expenditure" ],
+        "orders" : [ {
+          "expression" : {
+            "format" : "sql",
+            "expression" : "total_expenditure"
+          },
+          "sortType" : "desc"
+        } ]
+      }
+    },
+    "Ladzz1HX1m1Pz5mlyBtNr$$6J2RxUdFL55RAuuASLgXU" : {
+      "id" : "Ladzz1HX1m1Pz5mlyBtNr$$6J2RxUdFL55RAuuASLgXU",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "Reformat_1",
+        "slug" : "Reformat_1",
+        "x" : 380,
+        "y" : 20,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "BQo5D6pS8eh66EQ_GF7-C$$MaZNc4Uva0f47cM8l0qzv",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "customer_id",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "first_name",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "last_name",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "account_open_date",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "amount",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "9kQro9j2XZJQPU4eIokAY$$ICNcWqvRoitG9cC97fi2G",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "importLanguage" : "${$.workflow.metainfo.frontEndLanguage}",
+        "expressions" : [ {
+          "target" : "customer_id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "customer_id"
+          },
+          "description" : ""
+        }, {
+          "target" : "full_name",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "concat(first_name, ' ', last_name)"
+          },
+          "description" : ""
+        }, {
+          "target" : "account_lifetime",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "datediff(current_date(), account_open_date)"
+          },
+          "description" : ""
+        }, {
+          "target" : "amount",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "amount"
+          },
+          "description" : ""
+        } ],
+        "importString" : "",
+        "activeTab" : "expressions",
+        "columnsSelector" : [ "BQo5D6pS8eh66EQ_GF7-C$$MaZNc4Uva0f47cM8l0qzv##customer_id", "BQo5D6pS8eh66EQ_GF7-C$$MaZNc4Uva0f47cM8l0qzv##amount", "BQo5D6pS8eh66EQ_GF7-C$$MaZNc4Uva0f47cM8l0qzv##first_name", "BQo5D6pS8eh66EQ_GF7-C$$MaZNc4Uva0f47cM8l0qzv##last_name", "BQo5D6pS8eh66EQ_GF7-C$$MaZNc4Uva0f47cM8l0qzv##account_open_date" ]
+      }
+    },
+    "Of433Rht898dQh9cIo2p2$$y8p3dRw5Wuo-qnt7SAros" : {
+      "id" : "Of433Rht898dQh9cIo2p2$$y8p3dRw5Wuo-qnt7SAros",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "cust_rev_report",
+        "slug" : "cust_rev_report",
+        "x" : 1180,
+        "y" : 20,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "uiH2OILnXzVHXTPmkqooJ$$u7X2eJzIt8OVjCmvp-7qO",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "customer_id",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "full_name",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "account_lifetime",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "total_expenditure",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/cust_rev_report"
+      }
+    },
+    "7wSsTV-6WiXkkZ39THY_N$$30RqZfpMqJ1P_W-gw9OdH" : {
+      "id" : "7wSsTV-6WiXkkZ39THY_N$$30RqZfpMqJ1P_W-gw9OdH",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "orders_ds",
+        "slug" : "orders_ds",
+        "x" : -20,
+        "y" : 120,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "2qrEqau9HW9v2T-vQH0n8$$BhsFfgp4s37kUkX6UKc8N",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/orders_ds"
+      }
+    },
+    "3sHEccI6PW29ANx6r3kO_$$n47MZhGecOdm7FCfB-_R-" : {
+      "id" : "3sHEccI6PW29ANx6r3kO_$$n47MZhGecOdm7FCfB-_R-",
+      "component" : "Aggregate",
+      "metadata" : {
+        "label" : "Aggregate_1",
+        "slug" : "Aggregate_1",
+        "x" : 580,
+        "y" : 20,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "1y2mad8BY-VgGvgJovHGd$$pTmjpIVm2a30I9CAPkQWX",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "customer_id",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "full_name",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "account_lifetime",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "amount",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "ymfLB80y295hmxzW_Yolo$$u07n_V4urk_a0JCdRWMB4",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false
+      },
+      "properties" : {
+        "allIns" : false,
+        "doPivot" : false,
+        "aggregate" : [ {
+          "target" : "full_name",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "first(full_name)"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "account_lifetime",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "first(account_lifetime)"
+          },
+          "description" : "",
+          "_row_id" : null
+        }, {
+          "target" : "total_expenditure",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "round(sum(amount))"
+          },
+          "description" : "",
+          "_row_id" : null
+        } ],
+        "allowSelection" : true,
+        "pivotColumn" : null,
+        "pivotValues" : [ ],
+        "activeTab" : "groupBy",
+        "columnsSelector" : [ "1y2mad8BY-VgGvgJovHGd$$pTmjpIVm2a30I9CAPkQWX##full_name", "1y2mad8BY-VgGvgJovHGd$$pTmjpIVm2a30I9CAPkQWX##amount", "1y2mad8BY-VgGvgJovHGd$$pTmjpIVm2a30I9CAPkQWX##customer_id", "1y2mad8BY-VgGvgJovHGd$$pTmjpIVm2a30I9CAPkQWX##account_lifetime" ],
+        "groupBy" : [ {
+          "target" : "customer_id",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "customer_id"
+          },
+          "description" : "",
+          "_row_id" : null
+        } ]
+      }
+    }
+  },
+  "ports" : {
+    "inputs" : [ ],
+    "outputs" : [ ],
+    "selectedInputFields" : [ ],
+    "isCustomOutputSchema" : false
+  }
+}
