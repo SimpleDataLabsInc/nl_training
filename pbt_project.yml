@@ -1,6 +1,6 @@
 name: revenue_report
 description: ''
-version: 0.0.1
+version: '0.1'
 author: kyakkala+nl@prophecy.io
 language: python
 buildSystem: ''
