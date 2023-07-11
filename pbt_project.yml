@@ -1,0 +1,126 @@
+name: revenue_report
+description: ''
+version: 0.0.1
+author: kyakkala+nl3@prophecy.io
+language: python
+buildSystem: ''
+buildSystemDetails:
+  artefactID: revenue_report
+  parentArtefactID: nl_training
+  buildSystem: wheel
+  author: null
+  createdAt: '2023-07-11 04:16:45'
+pipelines:
+  pipelines/customer_revenue_report:
+    name: customer_revenue_report
+    description: ''
+    author: kyakkala+nl3@prophecy.io
+    mode: batch
+    artefactID: ''
+    language: python
+    createdAt: '2023-07-11 04:16:45'
+    datasets:
+      inputs:
+      - datasets/customers_ds
+      - datasets/orders_ds
+      outputs:
+      - datasets/revenue_report
+    subgraphs: []
+    dependencies: {}
+  pipelines/test:
+    name: test
+    description: ''
+    author: kyakkala+nl3@prophecy.io
+    mode: batch
+    artefactID: ''
+    language: python
+    createdAt: '2023-07-11 04:41:03'
+    datasets:
+      inputs:
+      - datasets/revenue_report
+      outputs: []
+    subgraphs: []
+    dependencies: {}
+datasets:
+  datasets/orders_ds:
+    name: orders_ds
+    description: ''
+    author: kyakkala+nl3@prophecy.io
+    createdAt: '2023-07-11 04:24:09'
+    mode: batch
+    physicalDatasets:
+      nl_fabric:
+        fabricId: 3230
+        datasetType: File
+        description: ''
+        author: kyakkala+nl3@prophecy.io
+        createdAt: '2023-07-11 04:24:09'
+  datasets/customers_ds:
+    name: customers_ds
+    description: ''
+    author: kyakkala+nl3@prophecy.io
+    createdAt: '2023-07-11 04:28:55'
+    mode: batch
+    physicalDatasets:
+      nl_fabric:
+        fabricId: 3230
+        datasetType: File
+        description: ''
+        author: kyakkala+nl3@prophecy.io
+        createdAt: '2023-07-11 04:28:55'
+  datasets/revenue_report:
+    name: revenue_report
+    description: ''
+    author: kyakkala+nl3@prophecy.io
+    createdAt: '2023-07-11 04:38:29'
+    mode: batch
+    physicalDatasets:
+      nl_fabric:
+        fabricId: 3230
+        datasetType: File
+        description: ''
+        author: kyakkala+nl3@prophecy.io
+        createdAt: '2023-07-11 04:38:29'
+templates: {}
+jobs:
+  jobs/customer_revenue_job:
+    name: customer_revenue_job
+    description: ''
+    fabricUID: 3230
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: x-small
+    scheduleCron: 0 0 0 1 * ? *
+    timeout: null
+    alerting:
+      emails: kyakkala@prophecy.io
+      onStart: false
+      onSuccess: true
+      onFailure: true
+    pipelines:
+    - pipelines/customer_revenue_report
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: false
+    createdAt: '2023-07-11 04:43:18'
+    author: kyakkala+nl3@prophecy.io
+functions:
+  author: null
+  createdAt: '2023-07-11 04:16:45'
+  gems: {}
+  udfs: {}
+  udafs: {}
+  expressions: {}
+subgraphs: {}
+sqlModels: {}
+sqlMacros: {}
+sqlSeeds: {}
+sqlSources: {}
+sqlUnreferencedSources: {}
+sqlPipeline: null
+dependencies: []
+projectDependencies: {}
+pipelineConfigurations: {}
